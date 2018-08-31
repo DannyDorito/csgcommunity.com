@@ -1,13 +1,13 @@
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer,
@@ -15,10 +15,6 @@ export class AppComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'twitter',
       sanitizer.bypassSecurityTrustResourceUrl('assets/twitter.svg'));
-  }
-
-  ngOnInit() {
-
   }
 
   twitter() {
