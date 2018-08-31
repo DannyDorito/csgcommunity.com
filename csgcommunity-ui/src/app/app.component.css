@@ -4,10 +4,16 @@
   justify-content:center;
   align-items:center;
   color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .headline {
-  color: white;
+  color: #DE5021;
+  text-transform: uppercase;
 }
 
 .subheading-2 {
@@ -33,7 +39,26 @@
 }
 
 .container {
+  padding-top: 64px;
   max-width: 80vw;
   background-color: #2F2E2E;
   margin: auto;
+  min-height: 90vh;
+}
+
+.container-inner {
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 5%;
+}
+
+.router-link-active {
+  color: #DE5021;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transform: scale(2);
+  fill: white; 
 }

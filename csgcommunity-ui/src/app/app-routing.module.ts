@@ -5,9 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/404.component';
 
 const routes: Routes = [
-  { path: 'faq', component: FaqComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', component: NotfoundComponent }
+  { path: 'faq', component: FaqComponent, data: { title: 'FAQ' } },
+  { path: '', component: HomeComponent, data: { title: 'Home' } },
+  { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } }
 ];
 @NgModule({
   imports: [

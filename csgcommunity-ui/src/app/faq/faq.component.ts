@@ -7,16 +7,10 @@ import { FaqService } from './faq.service';
   styleUrls: ['./faq.component.css', '../app.component.css']
 })
 export class FaqComponent implements OnInit {
-  faqs: FAQS;
+  faqs: string[];
   constructor(private faqService: FaqService) {}
   ngOnInit() {
-    this.loadFAQ();
-  }
 
-  loadFAQ() {
-    this.faqService.loadJSON().subscribe(results => {
-
-    });
   }
 }
 

@@ -11,6 +11,10 @@
 <router-outlet></router-outlet>
 <mat-toolbar class="footer mat-elevation-z6">
   <mat-toolbar-row>
-    <span class="toolbar">Servers</span>
+    <span class="toolbar icon">
+      <button mat-icon-button>
+        <mat-icon svgIcon="twitter" (click)="twitter()" disableRipple></mat-icon>
+      </button>
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>

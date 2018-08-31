@@ -7,6 +7,6 @@ export class FaqService {
   constructor(private http: HttpClient) { }
 
   loadJSON() {
-    return this.http.get < JSON > (environment.baseUri + 'assets/faq.json');
+    return this.http.get < string[] > (environment.baseUri + 'assets/faq.txt');
   }
 }
