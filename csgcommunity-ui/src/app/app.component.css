@@ -1,0 +1,39 @@
+.toolbar {
+  flex: 1 1 auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+}
+
+.headline {
+  color: white;
+}
+
+.subheading-2 {
+  color: white;
+}
+
+.p {
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.mat-toolbar-row {
+  background-color: #2F2E2E;
+}
+
+.container {
+  max-width: 80vw;
+  background-color: #2F2E2E;
+  margin: auto;
+}
