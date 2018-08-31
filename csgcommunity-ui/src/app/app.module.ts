@@ -44,7 +44,7 @@ import {
 } from '@angular/material';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
-import { NotfoundComponent } from './notfound/notfound.component';
+import { NotfoundComponent } from './notfound/404.component';
 import { FaqService } from './faq/faq.service';
 
 @NgModule({
