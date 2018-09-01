@@ -1,6 +1,18 @@
 .video {
-  display: block;
-  margin: 0 auto;
-  width: 111vw;
-  height: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 75%;
+  min-height: 75%;
+}
+
+.content {
+  top: 50%;
+  position: fixed !important;
+  background: transparent;
+  color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
