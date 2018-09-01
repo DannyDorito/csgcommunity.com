@@ -2,22 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 // components
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/404.component';
+import { AboutComponent } from './about/about.component';
 
 // services
 import { FaqService } from './faq/faq.service';
 
 // material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { AboutComponent } from './about/about.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { ServersComponent } from './servers/servers.component';
+import { RulesComponent } from './rules/rules.component';
+import { ForumsComponent } from './forums/forums.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,10 @@ import { AboutComponent } from './about/about.component';
     FaqComponent,
     HomeComponent,
     NotfoundComponent,
-    AboutComponent
+    AboutComponent,
+    ServersComponent,
+    RulesComponent,
+    ForumsComponent
   ],
   imports: [
     HttpClientModule,
@@ -36,7 +43,8 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [FaqService],
   bootstrap: [AppComponent]

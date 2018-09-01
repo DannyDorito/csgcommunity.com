@@ -8,5 +8,4 @@ import { FaqService } from './faq.service';
 })
 export class FaqComponent {
   constructor() {}
-
 }
