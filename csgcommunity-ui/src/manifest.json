@@ -3,7 +3,7 @@
   "short_name": "CSG",
   "theme_color": "#de5021",
   "background_color": "#232323",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
