@@ -1,42 +1,38 @@
-<div [class.example-is-mobile]="mobileQuery.matches">
-  <mat-sidenav-container autosize fullscreen style="background-color: #2F2E2E" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav class="mat-elevation-z3 unselectable" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" opened="true" fixedInViewport>
-      <mat-nav-list [@sidenavAnimationIsExpanded]="isExpanded" (@sidenavAnimationIsExpanded.start)="start()"
-        (@sidenavAnimationIsExpanded.done)="done()">
-        <mat-list-item (click)="isExpanded = !isExpanded">
-          <mat-icon mat-list-icon *ngIf="!isExpanded">chevron_right</mat-icon>
-          <mat-icon mat-list-icon *ngIf="isExpanded">chevron_left</mat-icon>
-          <p matLine *ngIf="isExpanded">CSG Exile</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>home</mat-icon>
-          <p matLine *ngIf="isExpanded">Home</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/servers']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>videogame_asset</mat-icon>
-          <p matLine *ngIf="isExpanded">Servers</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/rules']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>speaker_notes</mat-icon>
-          <p matLine *ngIf="isExpanded">Rules</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/forums']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>forum</mat-icon>
-          <p matLine *ngIf="isExpanded">Forums</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>people</mat-icon>
-          <p matLine *ngIf="isExpanded">About Us</p>
-        </mat-list-item>
-        <mat-list-item [routerLink]="['/faq']" routerLinkActive="router-link-active">
-          <mat-icon mat-list-icon>help_outline</mat-icon>
-          <p matLine *ngIf="isExpanded">FAQ</p>
-        </mat-list-item>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content class="mainContent">
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-</div>
+<mat-sidenav-container autosize fullscreen style="background-color: #2F2E2E">
+  <mat-sidenav class="mat-elevation-z3 unselectable" mode="side" opened="true" fixedInViewport>
+    <mat-nav-list [@sidenavAnimationIsExpanded]="isExpanded" (@sidenavAnimationIsExpanded.start)="start()"
+      (@sidenavAnimationIsExpanded.done)="done()">
+      <mat-list-item (click)="isExpanded = !isExpanded">
+        <mat-icon *ngIf="!isExpanded">chevron_right</mat-icon>
+        <mat-icon *ngIf="isExpanded">chevron_left</mat-icon>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <p matLine *ngIf="isExpanded">Home</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/servers']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>videogame_asset</mat-icon>
+        <p matLine *ngIf="isExpanded">Servers</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/rules']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>speaker_notes</mat-icon>
+        <p matLine *ngIf="isExpanded">Rules</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/forums']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>forum</mat-icon>
+        <p matLine *ngIf="isExpanded">Forums</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>people</mat-icon>
+        <p matLine *ngIf="isExpanded">About Us</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/faq']" routerLinkActive="router-link-active">
+        <mat-icon mat-list-icon>help_outline</mat-icon>
+        <p matLine *ngIf="isExpanded">FAQ</p>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="mainContent">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
