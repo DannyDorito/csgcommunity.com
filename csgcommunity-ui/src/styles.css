@@ -4,6 +4,7 @@ body {
   --csgBlack: #232323;
   --csgGrey: #2F2E2E;
   --csgOrange: #DE5021;
+  --csgWhite: #fff;
   --csgFont: 'Open Sans';
 }
 
@@ -909,7 +910,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-pseudo-checkbox::after {
-  color: #fafafa
+  color: var(--csgWhite)
 }
 
 .mat-accent .mat-pseudo-checkbox-checked,
@@ -935,7 +936,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-app-background {
-  background-color: #fafafa;
+  background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -944,12 +945,12 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-autocomplete-panel {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
 .mat-autocomplete-panel .mat-option.mat-selected:not(.mat-active):not(:hover) {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-autocomplete-panel .mat-option.mat-selected:not(.mat-active):not(:hover):not(.mat-option-disabled) {
@@ -957,7 +958,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-badge-content {
-  color: #fff;
+  color: var(--csgWhite);
   background: var(--csgOrange)
 }
 
@@ -967,7 +968,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-badge-warn .mat-badge-content {
-  color: #fff;
+  color: var(--csgWhite);
   background: var(--csgOrange)
 }
 
@@ -1168,7 +1169,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-bottom-sheet-container {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -1259,14 +1260,14 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-mini-fab,
 .mat-raised-button {
   color: rgba(0, 0, 0, .87);
-  background-color: #fff
+  background-color: var(--csgWhite)
 }
 
 .mat-fab.mat-primary,
 .mat-flat-button.mat-primary,
 .mat-mini-fab.mat-primary,
 .mat-raised-button.mat-primary {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-fab.mat-accent,
@@ -1280,7 +1281,7 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-flat-button.mat-warn,
 .mat-mini-fab.mat-warn,
 .mat-raised-button.mat-warn {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-fab.mat-accent[disabled],
@@ -1389,7 +1390,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-button-toggle-disabled {
-  background-color: #eee;
+  background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .26)
 }
 
@@ -1398,7 +1399,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-card {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -1411,11 +1412,11 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-checkbox-checkmark {
-  fill: #fafafa
+  fill: var(--csgWhite)
 }
 
 .mat-checkbox-checkmark-path {
-  stroke: #fafafa !important
+  stroke: var(--csgWhite) !important
 }
 
 @media screen and (-ms-high-contrast:black-on-white) {
@@ -1425,7 +1426,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-checkbox-mixedmark {
-  background-color: #fafafa
+  background-color: var(--csgWhite)
 }
 
 .mat-checkbox-checked.mat-primary .mat-checkbox-background,
@@ -1496,11 +1497,11 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
   background-color: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary .mat-chip-remove {
-  color: #fff;
+  color: var(--csgWhite);
   opacity: .4
 }
 
@@ -1510,11 +1511,11 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-warn {
   background-color: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-warn .mat-chip-remove {
-  color: #fff;
+  color: var(--csgWhite);
   opacity: .4
 }
 
@@ -1537,7 +1538,7 @@ textarea.cdk-textarea-autosize-measuring {
 }
 
 .mat-table {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-table tbody,
@@ -1618,7 +1619,7 @@ th.mat-header-cell {
 
 .mat-calendar-body-selected {
   background-color: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-calendar-body-disabled>.mat-calendar-body-selected {
@@ -1626,11 +1627,11 @@ th.mat-header-cell {
 }
 
 .mat-calendar-body-today.mat-calendar-body-selected {
-  box-shadow: inset 0 0 0 1px #fff
+  box-shadow: inset 0 0 0 1px var(--csgWhite)
 }
 
 .mat-datepicker-content {
-  background-color: #fff;
+  background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -1649,7 +1650,7 @@ th.mat-header-cell {
 
 .mat-datepicker-content.mat-warn .mat-calendar-body-selected {
   background-color: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-datepicker-content.mat-warn .mat-calendar-body-disabled>.mat-calendar-body-selected {
@@ -1657,7 +1658,7 @@ th.mat-header-cell {
 }
 
 .mat-datepicker-content.mat-warn .mat-calendar-body-today.mat-calendar-body-selected {
-  box-shadow: inset 0 0 0 1px #fff
+  box-shadow: inset 0 0 0 1px var(--csgWhite)
 }
 
 .mat-datepicker-toggle-active {
@@ -1673,7 +1674,7 @@ th.mat-header-cell {
 }
 
 .mat-dialog-container {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -1686,7 +1687,7 @@ th.mat-header-cell {
 }
 
 .mat-expansion-panel {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
@@ -1702,7 +1703,7 @@ th.mat-header-cell {
 
 @media (hover:none) {
   .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
-    background: #fff
+    background: var(--csgWhite)
   }
 }
 
@@ -1926,7 +1927,7 @@ th.mat-header-cell {
 }
 
 .mat-list-item-disabled {
-  background-color: #eee
+  background-color: var(--csgWhite)
 }
 
 .mat-list-option.mat-list-item-focus,
@@ -1937,7 +1938,7 @@ th.mat-header-cell {
 }
 
 .mat-menu-panel {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-menu-item {
@@ -1963,7 +1964,7 @@ th.mat-header-cell {
 }
 
 .mat-paginator {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-paginator,
@@ -2096,7 +2097,7 @@ th.mat-header-cell {
 
 .mat-select-content,
 .mat-select-panel-done-animating {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-select-value {
@@ -2140,17 +2141,17 @@ th.mat-header-cell {
 }
 
 .mat-drawer-container {
-  background-color: #fafafa;
+  background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
 .mat-drawer {
-  background-color: #fff;
+  background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
 .mat-drawer.mat-drawer-push {
-  background-color: #fff
+  background-color: var(--csgWhite)
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
@@ -2214,7 +2215,7 @@ th.mat-header-cell {
 }
 
 .mat-slide-toggle-thumb {
-  background-color: #fafafa
+  background-color: var(--csgWhite)
 }
 
 .mat-slide-toggle-bar {
@@ -2232,7 +2233,7 @@ th.mat-header-cell {
 }
 
 .mat-primary .mat-slider-thumb-label-text {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-accent .mat-slider-thumb,
@@ -2252,7 +2253,7 @@ th.mat-header-cell {
 }
 
 .mat-warn .mat-slider-thumb-label-text {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-slider-focus-ring {
@@ -2329,12 +2330,12 @@ th.mat-header-cell {
 
 .mat-step-header .mat-step-icon {
   background-color: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-step-header .mat-step-icon-not-touched {
   background-color: rgba(0, 0, 0, .38);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-step-header .mat-step-label.mat-step-label-active {
@@ -2343,7 +2344,7 @@ th.mat-header-cell {
 
 .mat-stepper-horizontal,
 .mat-stepper-vertical {
-  background-color: #fff
+  background-color: var(--csgWhite)
 }
 
 .mat-stepper-vertical-line::before {
@@ -2411,7 +2412,7 @@ th.mat-header-cell {
 
 .mat-tab-group.mat-primary.mat-background-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary.mat-background-primary .mat-ink-bar {
-  background-color: #fff
+  background-color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-accent .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled),
@@ -2453,7 +2454,7 @@ th.mat-header-cell {
 
 .mat-tab-group.mat-warn.mat-background-warn .mat-ink-bar,
 .mat-tab-nav-bar.mat-warn.mat-background-warn .mat-ink-bar {
-  background-color: #fff
+  background-color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-background-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled),
@@ -2478,7 +2479,7 @@ th.mat-header-cell {
 .mat-tab-group.mat-background-primary .mat-tab-link,
 .mat-tab-nav-bar.mat-background-primary .mat-tab-label,
 .mat-tab-nav-bar.mat-background-primary .mat-tab-link {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-background-primary .mat-tab-label.mat-tab-disabled,
@@ -2490,7 +2491,7 @@ th.mat-header-cell {
 
 .mat-tab-group.mat-background-primary .mat-tab-header-pagination-chevron,
 .mat-tab-nav-bar.mat-background-primary .mat-tab-header-pagination-chevron {
-  border-color: #fff
+  border-color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-background-primary .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron,
@@ -2572,7 +2573,7 @@ th.mat-header-cell {
 .mat-tab-group.mat-background-warn .mat-tab-link,
 .mat-tab-nav-bar.mat-background-warn .mat-tab-label,
 .mat-tab-nav-bar.mat-background-warn .mat-tab-link {
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-background-warn .mat-tab-label.mat-tab-disabled,
@@ -2584,7 +2585,7 @@ th.mat-header-cell {
 
 .mat-tab-group.mat-background-warn .mat-tab-header-pagination-chevron,
 .mat-tab-nav-bar.mat-background-warn .mat-tab-header-pagination-chevron {
-  border-color: #fff
+  border-color: var(--csgWhite)
 }
 
 .mat-tab-group.mat-background-warn .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron,
@@ -2598,13 +2599,13 @@ th.mat-header-cell {
 }
 
 .mat-toolbar {
-  background: #fff;
+  background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
 }
 
 .mat-toolbar.mat-primary {
   background: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-toolbar.mat-accent {
@@ -2614,7 +2615,7 @@ th.mat-header-cell {
 
 .mat-toolbar.mat-warn {
   background: var(--csgOrange);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-toolbar .mat-focused .mat-form-field-ripple,
@@ -2640,7 +2641,7 @@ th.mat-header-cell {
 }
 
 .mat-tree {
-  background: #fff
+  background: var(--csgWhite)
 }
 
 .mat-tree-node {
@@ -2649,7 +2650,7 @@ th.mat-header-cell {
 
 .mat-snack-bar-container {
   background: var(--csgBlack);
-  color: #fff
+  color: var(--csgWhite)
 }
 
 .mat-simple-snackbar-action {

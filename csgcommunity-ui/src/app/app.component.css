@@ -40,6 +40,7 @@
 
 .mat-list-item {
   color: white;
+  height: 30px;
   text-shadow: 2px 2px 2px #232323;
 }
 
