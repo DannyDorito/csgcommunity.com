@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FaqService } from './faq.service';
 
 @Component({
   selector: 'app-faq',

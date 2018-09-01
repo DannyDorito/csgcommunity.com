@@ -11,7 +11,6 @@ import { NotfoundComponent } from './notfound/404.component';
 import { AboutComponent } from './about/about.component';
 
 // services
-import { FaqService } from './faq/faq.service';
 
 // material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -46,7 +45,9 @@ import { ForumsComponent } from './forums/forums.component';
     MatSidenavModule,
     MatListModule
   ],
-  providers: [FaqService],
+  providers: [
+    // services
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

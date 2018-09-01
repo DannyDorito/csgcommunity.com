@@ -1,7 +1,8 @@
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
-import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -19,17 +20,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class AppComponent  {
+export class AppComponent implements OnDestroy {
+  private mobileQueryListener: () => void;
+  mobileQuery: MediaQueryList;
   isExpanded = false;
   animating = false;
 
   constructor(
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher,
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer
   ) {
-    iconRegistry.addSvgIcon(
-      'twitter',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/twitter.svg'));
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this.mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this.mobileQueryListener);
+    iconRegistry.addSvgIcon('twitter', sanitizer.bypassSecurityTrustResourceUrl('assets/twitter.svg'));
   }
 
   twitter() {
@@ -50,5 +56,9 @@ export class AppComponent  {
     if (this.animating) {
       requestAnimationFrame(() => this.tick());
     }
+  }
+
+  ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this.mobileQueryListener);
   }
 }
