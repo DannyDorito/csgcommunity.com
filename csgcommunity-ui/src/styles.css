@@ -26,7 +26,10 @@
   word-wrap: normal;
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 body {
@@ -38,6 +41,7 @@ body {
   --csgWhite: #fff;
   --csgFont: 'Open Sans';
 }
+
 /* 
 .mat-elevation-z0 {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12)
@@ -62,7 +66,6 @@ body {
 .mat-elevation-z5 {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12)
 } */
-
 .mat-elevation-z6 {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
 }
@@ -118,10 +121,10 @@ body {
 .mat-elevation-z19 {
   box-shadow: 0 9px 12px -6px rgba(0, 0, 0, .2), 0 19px 29px 2px rgba(0, 0, 0, .14), 0 7px 36px 6px rgba(0, 0, 0, .12)
 } */
-
 .mat-elevation-z20 {
   box-shadow: 0 10px 13px -6px rgba(0, 0, 0, .2), 0 20px 31px 3px rgba(0, 0, 0, .14), 0 8px 38px 7px rgba(0, 0, 0, .12)
 }
+
 /* 
 .mat-elevation-z21 {
   box-shadow: 0 10px 13px -6px rgba(0, 0, 0, .2), 0 21px 33px 3px rgba(0, 0, 0, .14), 0 8px 40px 7px rgba(0, 0, 0, .12)
@@ -138,7 +141,6 @@ body {
 .mat-elevation-z24 {
   box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12)
 } */
-
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;
@@ -247,7 +249,6 @@ body {
   font-size: 16px;
   font-weight: 400
 } */
-
 .mat-button,
 .mat-fab,
 .mat-flat-button,
@@ -343,7 +344,6 @@ body {
 .mat-expansion-panel-content {
   font: 400 14px/20px var(--csgFont), sans-serif;
 } */
-
 /* .mat-form-field {
   font-size: inherit;
   font-weight: 400;
@@ -515,7 +515,6 @@ body {
 .mat-grid-tile-header .mat-line:nth-child(n+2) {
   font-size: 12px
 } */
-
 input.mat-input-element {
   margin-top: -.0625em
 }
@@ -568,7 +567,6 @@ input.mat-input-element {
   font-size: 14px;
   font-weight: 500 
 }*/
-
 .mat-tab-group {
   font-family: var(--csgFont), sans-serif;
 }
@@ -604,7 +602,6 @@ input.mat-input-element {
   padding-top: 9px;
   padding-bottom: 9px
 } */
-
 .mat-list-item {
   font-family: var(--csgFont), sans-serif;
 }
@@ -725,7 +722,6 @@ input.mat-input-element {
 .mat-optgroup-label {
   font: 500 14px/24px var(--csgFont), sans-serif;
 } */
-
 .mat-simple-snackbar {
   font-family: var(--csgFont), sans-serif;
   font-size: 14px
@@ -746,7 +742,6 @@ input.mat-input-element {
   font-weight: 400;
   font-size: 14px
 } */
-
 .mat-ripple {
   overflow: hidden
 }
@@ -965,7 +960,6 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-disabled {
   background: var(--csgOrange)
 } */
-
 .mat-app-background {
   background-color: var(--csgBlack);
   color: rgba(0, 0, 0, .87)
@@ -987,7 +981,6 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-autocomplete-panel .mat-option.mat-selected:not(.mat-active):not(:hover):not(.mat-option-disabled) {
   color: rgba(0, 0, 0, .87)
 } */
-
 .mat-badge-content {
   color: var(--csgWhite);
   background: var(--csgOrange)
@@ -1712,7 +1705,6 @@ th.mat-header-cell {
 .mat-divider {
   border-top-color: rgba(0, 0, 0, .12)
 } */
-
 /* .mat-divider-vertical {
   border-right-color: rgba(0, 0, 0, .12)
 }
@@ -1809,7 +1801,6 @@ th.mat-header-cell {
 .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
   background-color: var(--csgOrange)
 } */
-
 .mat-error {
   color: var(--csgOrange)
 }
@@ -1893,7 +1884,6 @@ th.mat-header-cell {
 .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
   color: rgba(0, 0, 0, .06)
 } */
-
 .mat-icon.mat-primary {
   color: var(--csgOrange)
 }
@@ -1938,7 +1928,6 @@ th.mat-header-cell {
 .mat-warn .mat-input-element {
   caret-color: var(--csgOrange)
 } */
-
 .mat-list .mat-list-item,
 .mat-nav-list .mat-list-item,
 .mat-selection-list .mat-list-item {
@@ -2013,7 +2002,6 @@ th.mat-header-cell {
 .mat-paginator-last {
   border-top: 2px solid rgba(0, 0, 0, .54)
 } */
-
 .mat-icon-button[disabled] .mat-paginator-decrement,
 .mat-icon-button[disabled] .mat-paginator-first,
 .mat-icon-button[disabled] .mat-paginator-increment,
@@ -2170,7 +2158,6 @@ th.mat-header-cell {
 .mat-form-field .mat-select.mat-select-disabled .mat-select-arrow {
   color: rgba(0, 0, 0, .38)
 } */
-
 .mat-drawer-container {
   background-color: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
@@ -2347,7 +2334,6 @@ th.mat-header-cell {
 .mat-slider-vertical .mat-slider-ticks {
   background-image: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) 2px, transparent 0, transparent)
 } */
-
 /* .mat-step-header.cdk-keyboard-focused,
 .mat-step-header.cdk-program-focused,
 .mat-step-header:hover {
@@ -2628,7 +2614,6 @@ th.mat-header-cell {
 .mat-tab-nav-bar.mat-background-warn .mat-ripple-element {
   background-color: rgba(255, 255, 255, .12)
 } */
-
 .mat-toolbar {
   background: var(--csgWhite);
   color: rgba(0, 0, 0, .87)
@@ -2679,7 +2664,6 @@ th.mat-header-cell {
   color: rgba(0, 0, 0, .87)
 }
 */
-
 .mat-snack-bar-container {
   background: var(--csgBlack);
   color: var(--csgWhite)
@@ -2687,4 +2671,4 @@ th.mat-header-cell {
 
 .mat-simple-snackbar-action {
   color: var(--csgOrange)
-} 
+}
