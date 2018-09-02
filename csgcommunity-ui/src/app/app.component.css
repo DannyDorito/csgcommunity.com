@@ -87,13 +87,6 @@
   color: #DE5021;
 }
 
-.icon {
-  width: 22px;
-  height: 22px;
-  transform: scale(2);
-  fill: white;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }

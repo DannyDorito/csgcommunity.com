@@ -1599,7 +1599,7 @@ th.mat-header-cell {
 
 .mat-cell,
 .mat-footer-cell {
-  color: rgba(0, 0, 0, .87)
+  color: var(--csgWhite);
 }
 
 /*
