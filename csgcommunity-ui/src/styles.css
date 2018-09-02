@@ -297,21 +297,23 @@ body {
 .mat-chip .mat-chip-trailing-icon.mat-icon {
   font-size: 18px
 }
-
+*/
 .mat-table {
   font-family: var(--csgFont), sans-serif;
 }
 
+/*
 .mat-header-cell {
   font-size: 12px;
   font-weight: 500
 }
-
+*/
 .mat-cell,
 .mat-footer-cell {
   font-size: 14px
 }
 
+/*
 .mat-calendar {
   font-family: var(--csgFont), sans-serif;
 }
@@ -1560,7 +1562,7 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-accent .mat-chip-remove:hover {
   opacity: .54
 }
-
+*/
 .mat-table {
   background: var(--csgWhite)
 }
@@ -1575,7 +1577,7 @@ textarea.cdk-textarea-autosize-measuring {
 mat-footer-row,
 mat-header-row,
 mat-row {
-  background: inherit
+  background: var(--csgGrey)
 }
 
 mat-footer-row,
@@ -1584,11 +1586,16 @@ mat-row,
 td.mat-cell,
 td.mat-footer-cell,
 th.mat-header-cell {
-  border-bottom-color: rgba(0, 0, 0, .12)
+  border-bottom-color: var(--csgWhite);
+  color: var(--csgWhite);
+  text-shadow: 2px 2px 2px #232323;
 }
 
 .mat-header-cell {
-  color: rgba(0, 0, 0, .54)
+  color: var(--csgWhite);
+  text-shadow: 2px 2px 2px #232323;
+  font-family: var(--csgFont), sans-serif;
+  font-weight: 500
 }
 
 .mat-cell,
@@ -1596,6 +1603,7 @@ th.mat-header-cell {
   color: rgba(0, 0, 0, .87)
 }
 
+/*
 .mat-calendar-arrow {
   border-top-color: rgba(0, 0, 0, .54)
 }
@@ -2383,7 +2391,7 @@ th.mat-header-cell {
 
 .mat-tab-group-inverted-header .mat-tab-header,
 .mat-tab-group-inverted-header .mat-tab-nav-bar {
-  border-top: 1px solid rgba(0, 0, 0, .12);
+  border-top: 1px solid var(--csgWhite)
   border-bottom: none
 }
 

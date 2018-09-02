@@ -5,4 +5,36 @@ import { Component } from '@angular/core';
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css', '../app.component.css']
 })
-export class ServersComponent { }
+export class ServersComponent {
+  displayedColumns: string[] = ['mod', 'link'];
+  mods = MODS_DATA;
+
+  gotoSteam(link: string) {
+    window.location.href = 'https://steamcommunity.com/sharedfiles/filedetails/?id=' + link;
+  }
+}
+
+export interface Mod {
+  mod: string;
+  link: string;
+}
+
+const MODS_DATA: Mod[] = [
+  { mod: 'Exile Mod', link: '530982578' },
+  { mod: 'Chernarus Isles', link: '884988618' },
+  { mod: 'CUP Terrains - Core', link: '583496184' },
+  { mod: 'CUP Terrains - Maps:', link: '583544987' },
+  { mod: 'Open Chernarus Project', link: '786777307' },
+  { mod: 'NI Arms Complete', link: '665702172' },
+  { mod: 'RHS AFRF', link: '843425103' },
+  { mod: 'RHS USAF', link: '843577117' },
+  { mod: 'RHS GREF', link: '843593391' },
+  { mod: 'RHS SAF', link: '843632231' },
+  { mod: 'Specialist Military Arms (SMA)', link: '699630614' },
+  { mod: 'CBA_A3', link: '450814997' },
+  { mod: 'TRYK\'s Multi-play Uniforms', link: '779520435' },
+  { mod: 'Temp fix for Exile Miniguns', link: '720335480' },
+  { mod: 'Caucasus Insurgency', link: '848358281' },
+  { mod: 'Extended Items', link: '897168981' },
+  { mod: 'Extended Base Mod', link: '647753401' },
+];

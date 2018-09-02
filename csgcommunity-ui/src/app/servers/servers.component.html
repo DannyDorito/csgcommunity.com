@@ -3,7 +3,7 @@
   <h1 class="headline unselectable">CSG ARMA 3 Exile Chernarus Isles</h1>
   <h1 class="headline unselectable">144.217.255.231:2302</h1>
   <h2 class="subheading-2 unselectable">Features</h2>
-  <mat-list>
+  <mat-list class="unselectable">
     <mat-list-item>Custom Loot Table</mat-list-item>
     <mat-list-item>Custom Traders</mat-list-item>
     <mat-list-item>Custom Missions</mat-list-item>
@@ -24,4 +24,16 @@
     <mat-list-item>Claim Vehicle</mat-list-item>
   </mat-list>
   <h2 class="subheading-2 unselectable">Required Mods</h2>
+  <mat-table matColumnDef="mod" [dataSource]="mods">
+    <ng-container>
+      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Mod</strong></mat-header-cell>
+      <mat-cell *matCellDef="let m" class="unselectable">{{m.mod}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="link" class="unselectable">
+      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Link</strong></mat-header-cell>
+      <mat-cell *matCellDef="let m" (click)="gotoSteam(m.link)" class="unselectable"><u>Steam Download</u></mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
 </div>

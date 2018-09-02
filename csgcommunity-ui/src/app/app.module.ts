@@ -22,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
 
 // service worker
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -50,6 +51,7 @@ import { environment } from '../environments/environment';
     MatSidenavModule,
     MatListModule,
     MatSnackBarModule,
+    MatTableModule,
     // service worker
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
