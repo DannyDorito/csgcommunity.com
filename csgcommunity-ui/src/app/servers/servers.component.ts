@@ -20,7 +20,7 @@ export interface Mod {
 }
 
 const MODS_DATA: Mod[] = [
-  { mod: 'Exile Mod', link: '530982578' },
+  { mod: 'Exile Mod', link: '1487484880' },
   { mod: 'Chernarus Isles', link: '884988618' },
   { mod: 'CUP Terrains - Core', link: '583496184' },
   { mod: 'CUP Terrains - Maps:', link: '583544987' },
