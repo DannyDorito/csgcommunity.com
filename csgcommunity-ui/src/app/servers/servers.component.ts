@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
   displayedColumns: string[] = ['mod', 'link'];
-  mods = MODS_DATA;
+  requiredMods = REQUIRED_MODS_DATA;
+  optionalMods = OPTIONAL_MODS_DATA;
 
   gotoSteam(link: string) {
     window.location.href = 'https://steamcommunity.com/sharedfiles/filedetails/?id=' + link;
@@ -19,7 +20,8 @@ export interface Mod {
   link: string;
 }
 
-const MODS_DATA: Mod[] = [
+const REQUIRED_MODS_DATA: Mod[] = [
+  { mod: 'Steam Workshop Collection', link: '899270604' },
   { mod: 'Exile Mod', link: '1487484880' },
   { mod: 'Chernarus Isles', link: '884988618' },
   { mod: 'CUP Terrains - Core', link: '583496184' },
@@ -36,5 +38,11 @@ const MODS_DATA: Mod[] = [
   { mod: 'Temp fix for Exile Miniguns', link: '720335480' },
   { mod: 'Caucasus Insurgency', link: '848358281' },
   { mod: 'Extended Items', link: '897168981' },
-  { mod: 'Extended Base Mod', link: '647753401' },
+  { mod: 'Extended Base Mod', link: '647753401' }
+];
+
+const OPTIONAL_MODS_DATA: Mod[] = [
+  { mod: 'Enhanced Movement', link: '333310405' },
+  { mod: 'JSRS Soundmod', link: '861133494' },
+  { mod: 'Advanced Urban Rappelling', link: '730310357' }
 ];
