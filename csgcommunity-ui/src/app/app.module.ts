@@ -14,7 +14,6 @@ import { RulesComponent } from './rules/rules.component';
 import { ForumsComponent } from './forums/forums.component';
 
 // services
-import { FaqService } from './faq/faq.service';
 
 // material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -54,7 +53,9 @@ import { environment } from '../environments/environment';
     // service worker
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [FaqService],
+  providers: [
+    // services
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
