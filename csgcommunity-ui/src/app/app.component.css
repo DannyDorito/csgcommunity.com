@@ -63,3 +63,19 @@
   transform: scale(2);
   fill: white;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DE5021;
+}
+
+::-webkit-resizer {
+  background: #DE5021;
+}
