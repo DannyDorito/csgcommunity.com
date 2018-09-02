@@ -3,15 +3,12 @@
   left: 0;
   bottom: 0;
   object-fit: fill;
+  /* width: 100%; */
 }
 
 .content {
   top: 100px;
   position: absolute;
   justify-content: center;
-  width: 100%;
-}
-
-.video {
   width: 100%;
 }
