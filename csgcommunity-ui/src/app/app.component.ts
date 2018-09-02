@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +18,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class AppComponent  {
+export class AppComponent implements OnInit {
   isExpanded = false;
   animating = false;
 
-  constructor() {}
+  constructor(public snackBar: MatSnackBar) {}
+
+  ngOnInit() {
+    if (!navigator.onLine) {
+      this.openSnackBar('You are offline, website usage is limited!', 'Okay');
+    }
+  }
 
   start() {
     this.animating = true;
@@ -36,5 +43,9 @@ export class AppComponent  {
     if (this.animating) {
       requestAnimationFrame(() => this.tick());
     }
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {});
   }
 }

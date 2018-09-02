@@ -9,6 +9,9 @@ import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/404.component';
 import { AboutComponent } from './about/about.component';
+import { ServersComponent } from './servers/servers.component';
+import { RulesComponent } from './rules/rules.component';
+import { ForumsComponent } from './forums/forums.component';
 
 // services
 import { FaqService } from './faq/faq.service';
@@ -19,9 +22,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { ServersComponent } from './servers/servers.component';
-import { RulesComponent } from './rules/rules.component';
-import { ForumsComponent } from './forums/forums.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+// service worker
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -47,6 +50,8 @@ import { environment } from '../environments/environment';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
+    MatSnackBarModule,
+    // service worker
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [FaqService],

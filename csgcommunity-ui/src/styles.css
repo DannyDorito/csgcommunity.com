@@ -717,14 +717,14 @@ input.mat-input-element {
   font-weight: 500
 }
 
-/* .mat-option {
+/* /* .mat-option {
   font-family: var(--csgFont), sans-serif;
   font-size: 16px
 }
 
 .mat-optgroup-label {
   font: 500 14px/24px var(--csgFont), sans-serif;
-}
+} */
 
 .mat-simple-snackbar {
   font-family: var(--csgFont), sans-serif;
@@ -738,7 +738,7 @@ input.mat-input-element {
   font-weight: 500
 }
 
-.mat-tree {
+/* .mat-tree {
   font-family: var(--csgFont), sans-serif;
 }
 
@@ -2678,6 +2678,7 @@ th.mat-header-cell {
 .mat-tree-node {
   color: rgba(0, 0, 0, .87)
 }
+*/
 
 .mat-snack-bar-container {
   background: var(--csgBlack);
@@ -2686,4 +2687,4 @@ th.mat-header-cell {
 
 .mat-simple-snackbar-action {
   color: var(--csgOrange)
-} */
+} 
