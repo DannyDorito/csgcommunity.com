@@ -2,7 +2,7 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('assets/OpenSans') format('woff2');
+  src: local('assets/MaterialIcons') format('woff2');
 }
 
 @font-face {
@@ -10,7 +10,6 @@
   font-style: normal;
   font-weight: 400;
   src: local('assets/OpenSans') format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
 
 .material-icons {
@@ -38,7 +37,7 @@ body {
   --csgBlack: #232323;
   --csgGrey: #2F2E2E;
   --csgOrange: #DE5021;
-  --csgWhite: #fff;
+  --csgWhite: #ffffff;
   --csgFont: 'Open Sans';
 }
 
