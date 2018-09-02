@@ -1,10 +1,29 @@
+.csgOrange {
+  color: var(--csgOrange);
+}
+
+.csgBlack {
+  color: var(--csgBlack);
+}
+
+.csgGrey {
+  color: var(--csgGrey);
+}
+
+.csgWhite {
+  color: var(--csgWhite);
+}
+
 .headline {
-  color: #DE5021;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px 2px #232323;
   margin: 0;
   padding-top: 2vh;
+}
+
+.chevron-pad {
+  padding-left: 4px;
 }
 
 .center {
@@ -21,7 +40,6 @@
 }
 
 .subheading-2 {
-  color: #DE5021;
   text-shadow: 2px 2px 2px #232323;
 }
 
@@ -31,7 +49,6 @@
 }
 
 .para {
-  color: white;
   text-shadow: 2px 2px 2px #232323;
   line-height: 1.3;
 }
