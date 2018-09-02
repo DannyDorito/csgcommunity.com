@@ -22,6 +22,8 @@ import { MatListModule } from '@angular/material/list';
 import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
 import { ForumsComponent } from './forums/forums.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { ForumsComponent } from './forums/forums.component';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [FaqService],
   bootstrap: [AppComponent]
