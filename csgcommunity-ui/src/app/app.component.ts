@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     if (!navigator.onLine) {
       this.openSnackBar('You are offline, website usage is limited!', 'Okay', 0);
     }
-    this.rulesUpdated();
+    // this.rulesUpdated();
   }
 
   rulesUpdated() {
