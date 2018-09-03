@@ -1,7 +1,7 @@
 <div class="container">
   <h1 class="headline csgOrange unselectable">Cerberus Stomping Grounds</h1>
   <h1 class="headline csgOrange unselectable">CSG ARMA 3 Exile Chernarus Isles</h1>
-  <h2 class="subheading-2 csgOrange unselectable">144.217.255.231&colon;2302</h2>
+  <h2 class="subheading-2 csgOrange unselectable">144.217.255.231:2302</h2>
   <h2 class="subheading-2 csgOrange unselectable">Features</h2>
   <mat-list class="unselectable">
     <mat-list-item>Custom Loot Table</mat-list-item>
@@ -34,7 +34,7 @@
       <mat-cell *matCellDef="let _mod" (click)="gotoSteam(_mod.link)" class="unselectable"><u>Steam Download</u></mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns&colon; displayedColumns;"></mat-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
   <h2 class="subheading-2 csgOrange unselectable">Optional Mods</h2>
   <mat-table matColumnDef="mod" [dataSource]="optionalMods">
@@ -47,21 +47,21 @@
       <mat-cell *matCellDef="let _mod" (click)="gotoSteam(_mod.link)" class="unselectable"><u>Steam Download</u></mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns&colon; displayedColumns;"></mat-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
   <h2 class="subheading-2 csgOrange unselectable">Our Server</h2>
   <h3 class="subheading-1 csgWhite unselectable">Server Specs</h3>
   <mat-list class="unselectable">
     <mat-list-item>Intel Xeon E3-1270v6 - 4 cores/8 threads at 3.8Ghz</mat-list-item>
     <mat-list-item>32 Gb DDR4 ECC 2400Mhz RAM</mat-list-item>
-    <mat-list-item>2x Intel PCIe NVMe SSDs RAID 1 - Read 1200 MB/s&comma; Write 600 MB/s</mat-list-item>
+    <mat-list-item>2x Intel PCIe NVMe SSDs RAID 1 - Read 1200 MB/s, Write 600 MB/s</mat-list-item>
     <mat-list-item>Windows Server 2016</mat-list-item>
-    <mat-list-item>1Gb/s Upload&comma; 500Mb/s Download</mat-list-item>
+    <mat-list-item>1Gb/s Upload, 500Mb/s Download</mat-list-item>
   </mat-list>
   <img width="100%" src="assets/map1.webp" alt="CSG Chernarus Isles Klen Trader">
   <p class="para csgWhite unselectable">
     Many hours of work have been put towards giving the traders a signature apocalyptic look. A large variety of
-    special features have been added to further increase functionality and immersion such as extra detailing&comma; trader
+    special features have been added to further increase functionality and immersion such as extra detailing, trader
     animations and apocalyptic soundtracks playing from the radios.
   </p>
   <h2 class="subheading-2 csgOrange unselectable">Our Map</h2>
@@ -69,7 +69,7 @@
   <p class="para csgWhite unselectable">
     New areas have been added to the map such as the improved North East Airfield and Custom Built military bases
     containing hidden secrets to the origin of the Apocalypse. The downfall of society is evident all through the map.
-    Everything from soundtracks&comma; to custom weather scripts have been added to create a new environment that captures
+    Everything from soundtracks, to custom weather scripts have been added to create a new environment that captures
     some of the original DayZ magic.
   </p>
   <img width="100%" src="assets/map2.webp" alt="CSG Chernarus Isles Berezino Camp">
@@ -78,33 +78,33 @@
     Each trader has been built with a backstory in mind.
   </p>
   <p class="para csgWhite unselectable">
-    The Klen Trader&comma; once a popular campground&comma; and summer getaway was overtaken by the virus and
-    abandoned for many years. Survivors later stumbled upon it&comma; and fortified it as their new home&comma; transporting many
+    The Klen Trader, once a popular campground, and summer getaway was overtaken by the virus and
+    abandoned for many years. Survivors later stumbled upon it, and fortified it as their new home, transporting many
     crates from the Rify ship wreck to be used as walls. The stockpile of loot they built up is now for bargain to
     other survivors.
   </p>
   <p class="para csgWhite unselectable">
     The Stary Sobor Trader has a similar story to Klen. The old factory was abandoned after the outbreak
-    of the virus&comma; and several survivors hid their supplies deep inside the concrete jungles of the installation. As
-    their group expanded&comma; so did their gear stockpile until they decided to barter it away to the highest bidder.
+    of the virus, and several survivors hid their supplies deep inside the concrete jungles of the installation. As
+    their group expanded, so did their gear stockpile until they decided to barter it away to the highest bidder.
   </p>
   <p class="para csgWhite unselectable">
-    The Zelenogorsk trader&comma; the largest hospital center in Chernarus&comma; was over loaded with the sick as
-    the outbreak spread. Because of its importance&comma; U.N. Forces were quick to reinforce the installation&comma; and protect
+    The Zelenogorsk trader, the largest hospital center in Chernarus, was over loaded with the sick as
+    the outbreak spread. Because of its importance, U.N. Forces were quick to reinforce the installation, and protect
     the hospital from any desperate survivors attempting to steal the medical supplies there. Many fights broke out
-    around the premise&comma; hence all the carnage that surrounds the trade zone's walls. It now stands as a beacon of
+    around the premise, hence all the carnage that surrounds the trade zone's walls. It now stands as a beacon of
     hope for the small remaining population of Chernarus and offers help to those who come to them without hostile
     intent.
   </p>
   <img width="100%" src="assets/map3.webp" alt="CSG Chernarus Isles North East Airfield C130 Crash">
   <h3 class="subheading-1 csgWhite unselectable">Custom Locations</h3>
   <p class="para csgWhite unselectable">
-    Many new military bases&comma; sites&comma; and evac sites have been added for increased military presence and gear. Civilian
-    houses are not chocked full of automatic assault rifles&comma; as is often the case on Exile servers. For this reasons&comma;
+    Many new military bases, sites, and evac sites have been added for increased military presence and gear. Civilian
+    houses are not chocked full of automatic assault rifles, as is often the case on Exile servers. For this reasons,
     you must venture out to the higher risk sites to gain higher quality loot.
   </p>
   <p class="para csgWhite unselectable">
-    The custom military bases are&colon;
+    The custom military bases are:
   </p>
   <mat-list class="unselectable">
     <mat-list-item>Airbase Tent City (North West Airfield)</mat-list-item>
