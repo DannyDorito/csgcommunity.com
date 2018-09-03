@@ -2,8 +2,6 @@
 
 ## Build
 
-* ng build --prod --base-href "/csgcommunity/"
+* ng build --prod && ngh
 
-* ngh --dir=dist/csgcommunity-ui
-
-* https://dannydorito.github.io/csgcommunity
+* https://csgcommunity.com
