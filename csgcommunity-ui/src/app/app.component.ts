@@ -32,19 +32,6 @@ export class AppComponent implements OnInit {
     // this.rulesUpdated();
   }
 
-  rulesUpdated() {
-    try {
-      const lastViewedRules = Number(localStorage.getItem('lastViewedRules'));
-      if (lastViewedRules >= this.rulesLastUpdated.getTime()) {
-        return true;
-      } else {
-        return false;
-      }
-    } catch (Exception) {
-      return false;
-    }
-  }
-
   start() {
     this.animating = true;
     this.tick();

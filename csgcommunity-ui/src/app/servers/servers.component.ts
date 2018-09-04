@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
-  styleUrls: ['./servers.component.css', '../app.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class ServersComponent {
   displayedColumns: string[] = ['mod', 'link'];
