@@ -8,27 +8,27 @@
         <p matLine *ngIf="isExpanded" class="csgOrange"><strong>CSG Exile</strong></p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon>home</mat-icon>
+        <mat-icon svgIcon="home" mat-list-icon>home</mat-icon>
         <p matLine *ngIf="isExpanded">Home</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/servers']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon>videogame_asset</mat-icon>
+        <mat-icon svgIcon="videogame_asset" mat-list-icon></mat-icon>
         <p matLine *ngIf="isExpanded">Servers</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/rules']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon matBadge="*" matBadgeColor="warn">speaker_notes</mat-icon>
+        <mat-icon svgIcon="speaker_notes" mat-list-icon matBadge="*" matBadgeColor="warn"></mat-icon>
         <p matLine *ngIf="isExpanded">Rules</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/forums']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon>forum</mat-icon>
+        <mat-icon svgIcon="forum" mat-list-icon></mat-icon>
         <p matLine *ngIf="isExpanded">Forums</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon>people</mat-icon>
+        <mat-icon svgIcon="people" mat-list-icon>people</mat-icon>
         <p matLine *ngIf="isExpanded">About Us</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/faq']" routerLinkActive="router-link-active">
-        <mat-icon mat-list-icon>help_outline</mat-icon>
+        <mat-icon svgIcon="help_outline" mat-list-icon>help_outline</mat-icon>
         <p matLine *ngIf="isExpanded">FAQ</p>
       </mat-list-item>
     </mat-nav-list>
