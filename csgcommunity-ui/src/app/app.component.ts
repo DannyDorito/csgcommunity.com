@@ -27,12 +27,14 @@ export class AppComponent implements OnInit {
     public snackBar: MatSnackBar,
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer) {
-      iconRegistry.addSvgIcon('forum', sanitizer.bypassSecurityTrustResourceUrl('assets/forum.svg'));
-      iconRegistry.addSvgIcon('help_outline', sanitizer.bypassSecurityTrustResourceUrl('assets/help_outline.svg'));
-      iconRegistry.addSvgIcon('home', sanitizer.bypassSecurityTrustResourceUrl('assets/home.svg'));
-      iconRegistry.addSvgIcon('people', sanitizer.bypassSecurityTrustResourceUrl('assets/people.svg'));
-      iconRegistry.addSvgIcon('speaker_notes', sanitizer.bypassSecurityTrustResourceUrl('assets/speaker_notes.svg'));
-      iconRegistry.addSvgIcon('videogame_asset', sanitizer.bypassSecurityTrustResourceUrl('assets/videogame_asset.svg'));
+      iconRegistry.addSvgIcon('forum', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/forum.svg'));
+      iconRegistry.addSvgIcon('help_outline', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/help_outline.svg'));
+      iconRegistry.addSvgIcon('home', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/home.svg'));
+      iconRegistry.addSvgIcon('people', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/people.svg'));
+      iconRegistry.addSvgIcon('speaker_notes', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/speaker_notes.svg'));
+      iconRegistry.addSvgIcon('videogame_asset', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/videogame_asset.svg'));
+      iconRegistry.addSvgIcon('chevron_left', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/chevron_left.svg'));
+      iconRegistry.addSvgIcon('chevron_right', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/chevron_right.svg'));
     }
 
   ngOnInit() {

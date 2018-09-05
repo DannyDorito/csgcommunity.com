@@ -3,8 +3,8 @@
     <mat-nav-list [@sidenavAnimationIsExpanded]="isExpanded" (@sidenavAnimationIsExpanded.start)="start()"
       (@sidenavAnimationIsExpanded.done)="done()">
       <mat-list-item (click)="isExpanded = !isExpanded">
-        <mat-icon mat-list-icon *ngIf="!isExpanded" class="chevron-pad">chevron_right</mat-icon>
-        <mat-icon mat-list-icon *ngIf="isExpanded" class="chevron-pad">chevron_left</mat-icon>
+        <mat-icon svgIcon="chevron_right" mat-list-icon *ngIf="!isExpanded" class="chevron-pad">chevron_right</mat-icon>
+        <mat-icon svgIcon="chevron_left" mat-list-icon *ngIf="isExpanded" class="chevron-pad">chevron_left</mat-icon>
         <p matLine *ngIf="isExpanded" class="csgOrange"><strong>CSG Exile</strong></p>
       </mat-list-item>
       <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active">
