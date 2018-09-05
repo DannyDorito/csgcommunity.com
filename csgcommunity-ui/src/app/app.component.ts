@@ -21,15 +21,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class AppComponent implements OnInit {
   isExpanded = false;
   animating = false;
-  rulesLastUpdated = new Date('September 02, 2018');
-  constructor(
-    public snackBar: MatSnackBar) {}
+  constructor(public snackBar: MatSnackBar) {}
 
   ngOnInit() {
     if (!navigator.onLine) {
-      this.openSnackBar('You are offline, website usage is limited!', 'Okay', 0);
+      this.openSnackBar('You are offline, website usage is limited! 🌐', 'Okay');
     }
-    // this.rulesUpdated();
   }
 
   start() {
@@ -47,9 +44,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  openSnackBar(message: string, action: string, length: number) {
-    this.snackBar.open(message, action, {
-      duration: length
-    });
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action);
   }
 }
