@@ -35,6 +35,7 @@ export class AppComponent implements OnInit {
       iconRegistry.addSvgIcon('videogame_asset', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/videogame_asset.svg'));
       iconRegistry.addSvgIcon('chevron_left', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/chevron_left.svg'));
       iconRegistry.addSvgIcon('chevron_right', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/chevron_right.svg'));
+      iconRegistry.addSvgIcon('alternate_email', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/alternate_email.svg'));
     }
 
   ngOnInit() {

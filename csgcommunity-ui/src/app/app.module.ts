@@ -28,6 +28,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 // service worker
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { environment } from '../environments/environment';
     AboutComponent,
     ServersComponent,
     RulesComponent,
-    ForumsComponent
+    ForumsComponent,
+    ContactComponent
   ],
   imports: [
     HttpClientModule,
