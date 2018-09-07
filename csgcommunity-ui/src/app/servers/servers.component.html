@@ -31,7 +31,10 @@
     </ng-container>
     <ng-container matColumnDef="link" class="unselectable">
       <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Link</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod" (click)="gotoSteam(_mod.link)" class="unselectable"><u>Steam Download</u></mat-cell>
+      <mat-cell *matCellDef="let _mod">
+        <a mat-button href="https://steamcommunity.com/sharedfiles/filedetails/?id={{_mod.link}}"><u>Steam Workshop
+            Link</u></a>
+      </mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
@@ -44,7 +47,10 @@
     </ng-container>
     <ng-container matColumnDef="link" class="unselectable">
       <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Link</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod" (click)="gotoSteam(_mod.link)" class="unselectable"><u>Steam Download</u></mat-cell>
+      <mat-cell *matCellDef="let _mod" class="unselectable">
+        <a mat-button href="https://steamcommunity.com/sharedfiles/filedetails/?id={{_mod.link}}"><u>Steam Workshop
+            Link</u></a>
+      </mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>

@@ -9,10 +9,6 @@ export class ServersComponent {
   displayedColumns: string[] = ['mod', 'link'];
   requiredMods = REQUIRED_MODS_DATA;
   optionalMods = OPTIONAL_MODS_DATA;
-
-  gotoSteam(link: string) {
-    window.location.href = 'https://steamcommunity.com/sharedfiles/filedetails/?id=' + link;
-  }
 }
 
 export interface Mod {
