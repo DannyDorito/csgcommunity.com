@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
 import { ForumsComponent } from './forums/forums.component';
 import { ContactComponent } from './contact/contact.component';
+import { environment } from '../environments/environment';
 
 const routes: Routes = [
   { path: 'faq', component: FaqComponent, data: { title: 'FAQ' } },
@@ -23,7 +24,11 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes,
-      { enableTracing: false }
+      {
+        enableTracing: environment.tracing,
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
+      }
     )
   ],
   exports: [
