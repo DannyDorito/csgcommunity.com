@@ -3,7 +3,7 @@
 * Install Node.js and NPM
 * Open Node.js command prompt
 * Do ``npm install -g @angular/cli``
-* Pull this repo
+* Clone this repo
 * Do ``cd *location of repo*``
 * Do ``npm install angular-cli-ghpages --save-dev``
 
