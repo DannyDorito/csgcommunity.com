@@ -22,15 +22,11 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      routes,
-      {
+    RouterModule.forRoot(routes, {
         enableTracing: environment.tracing,
-        scrollPositionRestoration: 'top',
-        anchorScrolling: 'enabled'
-      }
-    )
-  ],
+        scrollPositionRestoration: 'enabled'
+      })
+    ],
   exports: [
     RouterModule
   ]
