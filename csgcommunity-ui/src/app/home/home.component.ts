@@ -19,9 +19,11 @@ export class HomeComponent implements OnInit {
     this.ipQuery.getClientIP().subscribe(data => {
       ip = data['ip'].toString();
       if (ip === environment.ip) {
-        this.csg = 'Cailee Steals Guy';
-      } else {
-        this.csg = 'Cerberus Stomping Grounds';
+        if (Math.random() <= 0.2) {
+          this.csg = 'Cailee Steals Guy';
+        } else {
+          this.csg = 'Cerberus Stomping Grounds';
+        }
       }
     });
 
