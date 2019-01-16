@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class HomeComponent implements OnInit {
 
   logoSource = '';
-  csg = '';
+  csg = 'Cerberus Stomping Grounds';
 
   constructor(private ipQuery: IPQueryService) {}
 
@@ -21,8 +21,6 @@ export class HomeComponent implements OnInit {
       if (ip === environment.ip) {
         if (Math.random() <= 0.2) {
           this.csg = 'Cailee Steals Guy';
-        } else {
-          this.csg = 'Cerberus Stomping Grounds';
         }
       }
     });
