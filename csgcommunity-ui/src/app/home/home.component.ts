@@ -28,9 +28,9 @@ export class HomeComponent implements OnInit {
     });
 
     if (Math.random() >= 0.2) {
-      this.logoSource = 'assets/logo-large.jpg';
+      this.logoSource = 'assets/logo-large.png';
     } else {
-      this.logoSource = 'assets/logo-large-alt.png';
+      this.logoSource = 'assets/logo-large-alt.jpg';
     }
   }
 }
