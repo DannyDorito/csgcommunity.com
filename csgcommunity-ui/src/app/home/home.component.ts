@@ -10,10 +10,13 @@ export class HomeComponent implements OnInit {
   logoSource = '';
 
   ngOnInit() {
-    if (Math.random() >= 0.2) {
+    const randomNum = Math.floor(Math.random() * 10);
+    if (randomNum >= 7) {
+      this.logoSource = 'assets/logo-large-dog.jpg';
+    } else if (randomNum < 7 && randomNum > 3) {
       this.logoSource = 'assets/logo-large.png';
     } else {
-      this.logoSource = 'assets/logo-large-alt.jpg';
+      this.logoSource = 'assets/logo-large-cph.jpg';
     }
   }
 }
