@@ -10,13 +10,18 @@ export class HomeComponent implements OnInit {
   logoSource = '';
 
   ngOnInit() {
-    const randomNum = Math.floor(Math.random() * 10);
-    if (randomNum >= 7) {
-      this.logoSource = 'assets/logo-large-dog.png';
-    } else if (randomNum < 7 && randomNum > 3) {
-      this.logoSource = 'assets/logo-large.png';
-    } else {
+    const randomNum = this.getRandomInt(10);
+    console.log(randomNum);
+    if (randomNum <= 1) {
       this.logoSource = 'assets/logo-large-cph.png';
+    } else if (randomNum >= 9) {
+      this.logoSource = 'assets/logo-large-dog.png';
+    } else {
+      this.logoSource = 'assets/logo-large.png';
     }
+  }
+
+  getRandomInt(max: number) {
+    return Math.floor(Math.random() * Math.floor(max));
   }
 }
