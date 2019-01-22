@@ -12,11 +12,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     const randomNum = Math.floor(Math.random() * 10);
     if (randomNum >= 7) {
-      this.logoSource = 'assets/logo-large-dog.jpg';
+      this.logoSource = 'assets/logo-large-dog.png';
     } else if (randomNum < 7 && randomNum > 3) {
       this.logoSource = 'assets/logo-large.png';
     } else {
-      this.logoSource = 'assets/logo-large-cph.jpg';
+      this.logoSource = 'assets/logo-large-cph.png';
     }
   }
 }
