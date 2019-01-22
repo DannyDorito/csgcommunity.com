@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     const randomNum = this.getRandomInt(10);
-    console.log(randomNum);
     if (randomNum <= 1) {
       this.logoSource = 'assets/logo-large-cph.png';
     } else if (randomNum >= 9) {
