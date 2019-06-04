@@ -29,7 +29,6 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ContactComponent } from './contact/contact.component';
-import { MeetupComponent } from './meetup/meetup.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +40,7 @@ import { MeetupComponent } from './meetup/meetup.component';
     ServersComponent,
     RulesComponent,
     ForumsComponent,
-    ContactComponent,
-    MeetupComponent
+    ContactComponent
   ],
   imports: [
     HttpClientModule,
