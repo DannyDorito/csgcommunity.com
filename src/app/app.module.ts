@@ -29,6 +29,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ContactComponent } from './contact/contact.component';
+import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
+import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ContactComponent } from './contact/contact.component';
     ServersComponent,
     RulesComponent,
     ForumsComponent,
-    ContactComponent
+    ContactComponent,
+    DayZRestartScriptComponent,
+    ARMA3RestartScriptComponent
   ],
   imports: [
     HttpClientModule,

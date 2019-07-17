@@ -8,7 +8,10 @@ import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
 import { ForumsComponent } from './forums/forums.component';
 import { ContactComponent } from './contact/contact.component';
+import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
+import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
 import { environment } from '../environments/environment';
+
 
 const routes: Routes = [
   { path: 'faq', component: FaqComponent, data: { title: 'FAQ' } },
@@ -17,6 +20,8 @@ const routes: Routes = [
   { path: 'servers', component: ServersComponent, data: { title: 'Servers'} },
   { path: 'rules', component: RulesComponent, data: { title: 'Rules' } },
   { path: 'contact', component: ContactComponent, data: { title: 'Contact Us' } },
+  { path: 'projects/dayzrestart', component: DayZRestartScriptComponent, data: { title: 'DayZ Restart Script' } },
+  { path: 'projects/arma3restart', component: ARMA3RestartScriptComponent, data: { title: 'ARMA 3 Restart Script' } },
   { path: '', component: HomeComponent, data: { title: 'Home' } },
   { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } }
 ];
