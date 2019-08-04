@@ -1,21 +1,5 @@
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-servers',
-  templateUrl: './servers.component.html',
-  styleUrls: ['../app.component.css']
-})
-export class ServersComponent {
-  displayedColumns: string[] = ['mod', 'link'];
-  requiredMods = REQUIRED_MODS_DATA;
-  optionalMods = OPTIONAL_MODS_DATA;
-}
-
-export interface Mod {
-  mod: string;
-  link: string;
-}
-
 const REQUIRED_MODS_DATA: Mod[] = [
   { mod: 'Steam Workshop Collection', link: '899270604' },
   { mod: 'Exile Mod', link: '1487484880' },
@@ -42,3 +26,23 @@ const OPTIONAL_MODS_DATA: Mod[] = [
   { mod: 'JSRS Soundmod', link: '861133494' },
   { mod: 'Advanced Urban Rappelling', link: '730310357' }
 ];
+
+@Component({
+  selector: 'app-servers',
+  templateUrl: './servers.component.html',
+  styleUrls: ['../app.component.css']
+})
+export class ServersComponent {
+  displayedColumns: string[] = ['mod', 'link'];
+  requiredMods = REQUIRED_MODS_DATA;
+  optionalMods = OPTIONAL_MODS_DATA;
+}
+
+export interface Mod {
+  mod: string;
+  link: string;
+}
+
+
+
+
