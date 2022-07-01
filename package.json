@@ -24,7 +24,7 @@
     "@angular/router": "^11.0.0",
     "@angular/service-worker": "^11.0.0",
     "ajv": "^6.12.6",
-    "core-js": "^3.22.4",
+    "core-js": "^3.23.3",
     "eslint": "^8.14.0",
     "rxjs": "^6.6.7",
     "zone.js": "~0.10.3"
