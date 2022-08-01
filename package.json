@@ -23,7 +23,7 @@
     "@angular/pwa": "^14.0.4",
     "@angular/router": "^14.0.4",
     "@angular/service-worker": "^14.0.4",
-    "ajv": "^6.12.6",
+    "ajv": "^8.11.0",
     "core-js": "^3.23.3",
     "eslint": "^8.20.0",
     "rxjs": "^6.6.7",
