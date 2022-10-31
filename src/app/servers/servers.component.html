@@ -1,7 +1,6 @@
 <div class="container">
   <h1 class="headline csgOrange unselectable">Cerberus Stomping Grounds</h1>
   <h1 class="headline csgOrange unselectable">CSG ARMA 3 Exile Chernarus Isles</h1>
-  <!-- <h2 class="subheading-2 csgOrange unselectable">144.217.255.231:2302</h2> -->
   <h2 class="subheading-2 csgOrange unselectable">Features</h2>
   <mat-list class="unselectable">
     <mat-list-item>Custom Loot Table</mat-list-item>
@@ -23,38 +22,6 @@
     <mat-list-item>Revive Script</mat-list-item>
     <mat-list-item>Claim Vehicle</mat-list-item>
   </mat-list>
-  <h2 class="subheading-2 csgOrange unselectable">Required Mods</h2>
-  <mat-table matColumnDef="mod" [dataSource]="requiredMods">
-    <ng-container>
-      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Mod</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod" class="unselectable">{{_mod.mod}}</mat-cell>
-    </ng-container>
-    <ng-container matColumnDef="link" class="unselectable">
-      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Link</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod">
-        <a mat-button href="https://steamcommunity.com/sharedfiles/filedetails/?id={{_mod.link}}" aria-label="Steam Link"><u>Steam
-            Workshop Link</u></a>
-      </mat-cell>
-    </ng-container>
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
-  <h2 class="subheading-2 csgOrange unselectable">Optional Mods</h2>
-  <mat-table matColumnDef="mod" [dataSource]="optionalMods">
-    <ng-container>
-      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Mod</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod" class="unselectable">{{_mod.mod}}</mat-cell>
-    </ng-container>
-    <ng-container matColumnDef="link" class="unselectable">
-      <mat-header-cell *matHeaderCellDef class="unselectable"><strong>Link</strong></mat-header-cell>
-      <mat-cell *matCellDef="let _mod" class="unselectable">
-        <a mat-button href="https://steamcommunity.com/sharedfiles/filedetails/?id={{_mod.link}}" aria-label="Steam Link"><u>Steam
-            Workshop Link</u></a>
-      </mat-cell>
-    </ng-container>
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
   <h2 class="subheading-2 csgOrange unselectable">Our Server</h2>
   <h3 class="subheading-1 csgWhite unselectable">Server Specs</h3>
   <mat-list class="unselectable">
