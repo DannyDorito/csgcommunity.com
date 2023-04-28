@@ -6,18 +6,15 @@ import { NotfoundComponent } from './notfound/404.component';
 import { AboutComponent } from './about/about.component';
 import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
-import { ForumsComponent } from './forums/forums.component';
 import { ContactComponent } from './contact/contact.component';
 import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
 import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
 import { environment } from '../environments/environment';
 
-
 const routes: Routes = [
   { path: 'faq', component: FaqComponent, data: { title: 'FAQ' } },
-  { path: 'forums', component: ForumsComponent, data: { title: 'Forums' } },
-  { path: 'about', component: AboutComponent, data: { title: 'About Us'} },
-  { path: 'servers', component: ServersComponent, data: { title: 'Servers'} },
+  { path: 'about', component: AboutComponent, data: { title: 'About Us' } },
+  { path: 'servers', component: ServersComponent, data: { title: 'Servers' } },
   { path: 'rules', component: RulesComponent, data: { title: 'Rules' } },
   { path: 'contact', component: ContactComponent, data: { title: 'Contact Us' } },
   { path: 'projects/dayzrestart', component: DayZRestartScriptComponent, data: { title: 'DayZ Restart Script' } },
@@ -25,15 +22,15 @@ const routes: Routes = [
   { path: '', component: HomeComponent, data: { title: 'Home' } },
   { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } }
 ];
-@NgModule({
+@NgModule( {
   imports: [
-    RouterModule.forRoot(routes, {
-    enableTracing: environment.tracing,
-    scrollPositionRestoration: 'enabled'
-})
-    ],
+    RouterModule.forRoot( routes, {
+      enableTracing: environment.tracing,
+      scrollPositionRestoration: 'enabled'
+    } )
+  ],
   exports: [
     RouterModule
   ]
-})
-export class AppRoutingModule {}
+} )
+export class AppRoutingModule { }

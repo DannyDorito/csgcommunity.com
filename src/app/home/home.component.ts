@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', '../app.component.css']
 })
-export class HomeComponent {
-  // getRandomInt(max: number) {
-  //   return Math.floor(Math.random() * Math.floor(max));
-  // }
-}
+export class HomeComponent {}

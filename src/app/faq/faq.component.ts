@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'app-faq',
   templateUrl: './faq.component.html',
-  styleUrls: ['../app.component.css']
-})
+  styleUrls: [ '../app.component.css' ]
+} )
 export class FaqComponent { }

@@ -12,6 +12,10 @@ body {
   text-shadow: 2px 2px 2px var(--csgBlack);
 }
 
+button {
+  background-color: var(--csgOrange) !important;
+}
+
 .mat-elevation-z6 {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
 }
@@ -165,38 +169,43 @@ input.mat-input-element {
 .mat-nav-list .mat-list-item,
 .mat-selection-list .mat-list-item {
   font-size: 16px;
+  padding: 0;
 }
 
 .mat-list .mat-list-item .mat-line,
 .mat-nav-list .mat-list-item .mat-line,
 .mat-selection-list .mat-list-item .mat-line {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: ellipsis;
   text-overflow: ellipsis;
   display: block;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .mat-list .mat-list-item .mat-line:nth-child(n+2),
 .mat-nav-list .mat-list-item .mat-line:nth-child(n+2),
 .mat-selection-list .mat-list-item .mat-line:nth-child(n+2) {
   font-size: 14px;
+  padding: 0;
 }
 
 .mat-list .mat-list-option,
 .mat-nav-list .mat-list-option,
 .mat-selection-list .mat-list-option {
   font-size: 16px;
+  padding: 0;
 }
 
 .mat-list .mat-list-option .mat-line,
 .mat-nav-list .mat-list-option .mat-line,
 .mat-selection-list .mat-list-option .mat-line {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: ellipsis;
   text-overflow: ellipsis;
   display: block;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .mat-list .mat-list-option .mat-line:nth-child(n+2),
@@ -222,7 +231,7 @@ input.mat-input-element {
 .mat-nav-list[dense] .mat-list-item .mat-line,
 .mat-selection-list[dense] .mat-list-item .mat-line {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: ellipsis;
   text-overflow: ellipsis;
   display: block;
   box-sizing: border-box;
@@ -244,7 +253,7 @@ input.mat-input-element {
 .mat-nav-list[dense] .mat-list-option .mat-line,
 .mat-selection-list[dense] .mat-list-option .mat-line {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: ellipsis;
   text-overflow: ellipsis;
   display: block;
   box-sizing: border-box;
@@ -275,7 +284,7 @@ input.mat-input-element {
 }
 
 .mat-ripple {
-  overflow: hidden;
+  overflow: ellipsis;
 }
 
 .mat-ripple.mat-ripple-unbounded {
@@ -301,10 +310,11 @@ input.mat-input-element {
   clip: rect(0 0 0 0);
   size: 1px;
   margin: -1px;
-  overflow: hidden;
+  overflow: ellipsis;
   padding: 0;
   position: absolute;
   outline: 0;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -424,7 +434,7 @@ input.mat-input-element {
   border-radius: 50%;
   transition: transform .2s ease-in-out;
   transform: scale(.6);
-  overflow: hidden;
+  overflow: ellipsis;
   white-space: nowrap;
   text-overflow: ellipsis;
   pointer-events: none;

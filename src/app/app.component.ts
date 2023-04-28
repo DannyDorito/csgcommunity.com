@@ -68,5 +68,5 @@ export class AppComponent implements OnInit {
 
   createLinkForCanonicalURL() {
     this.canonicalService.createLinkForCanonicalURL();
-  } 
+  }
 }

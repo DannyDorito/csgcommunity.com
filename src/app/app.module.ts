@@ -11,8 +11,6 @@ import { NotfoundComponent } from './notfound/404.component';
 import { AboutComponent } from './about/about.component';
 import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
-import { ForumsComponent } from './forums/forums.component';
-
 // services
 
 // material
@@ -41,7 +39,6 @@ import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restar
     AboutComponent,
     ServersComponent,
     RulesComponent,
-    ForumsComponent,
     ContactComponent,
     DayZRestartScriptComponent,
     ARMA3RestartScriptComponent
