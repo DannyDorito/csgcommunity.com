@@ -3,7 +3,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
-import { CanonicalService } from './app-canonical';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +26,6 @@ export class AppComponent implements OnInit {
   constructor(
     public snackBar: MatSnackBar,
     iconRegistry: MatIconRegistry,
-    private canonicalService: CanonicalService,
     sanitizer: DomSanitizer) {
       iconRegistry.addSvgIcon('forum', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/forum.svg'));
       iconRegistry.addSvgIcon('help_outline', sanitizer.bypassSecurityTrustResourceUrl('assets/svg-icons/help_outline.svg'));
@@ -41,7 +39,6 @@ export class AppComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.createLinkForCanonicalURL();
     if (!navigator.onLine) {
       this.openSnackBar('You are offline, website usage is limited! 🌐', 'Okay');
     }
@@ -64,9 +61,5 @@ export class AppComponent implements OnInit {
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action);
-  }
-
-  createLinkForCanonicalURL() {
-    this.canonicalService.createLinkForCanonicalURL();
   }
 }
