@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, data: { title: 'Contact Us' } },
   { path: 'projects/dayzrestart', component: DayZRestartScriptComponent, data: { title: 'DayZ Restart Script' } },
   { path: 'projects/arma3restart', component: ARMA3RestartScriptComponent, data: { title: 'ARMA 3 Restart Script' } },
-  { path: '', component: HomeComponent, data: { title: 'Home' } },
+  { path: '', pathMatch: 'full', component: HomeComponent, data: { title: 'Home' } },
   { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } }
 ];
 @NgModule( {
