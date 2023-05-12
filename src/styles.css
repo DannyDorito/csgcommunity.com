@@ -1,16 +1,19 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: var(--csgFont), sans-serif;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+  url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+    format('woff2');
+    font-display: swap;
+
   --csgBlack: #232323;
   --csgGrey: #2F2E2E;
   --csgOrange: #DE5021;
   --csgWhite: #ffffff;
   --csgFont: 'Open Sans';
   text-shadow: 2px 2px 2px var(--csgBlack);
-  font-display: swap;
 }
 
 button {
