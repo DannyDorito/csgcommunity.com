@@ -3,10 +3,10 @@ html {
 }
 body {
   font-family: var(--csgFont), sans-serif;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+  src: local(var(--csgFont)), local(var(--csgFont)),
   url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
     format('woff2');
-    font-display: swap;
+  font-display: swap;
 
   --csgBlack: #232323;
   --csgGrey: #2F2E2E;
