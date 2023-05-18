@@ -1,7 +1,7 @@
 <mat-sidenav-container autosize fullscreen class="background">
   <mat-sidenav class="mat-elevation-z4 unselectable" mode="side" opened="true" fixedInViewport>
     <mat-nav-list [@sidenavAnimationIsExpanded]="isExpanded" (@sidenavAnimationIsExpanded.start)="start()"
-      (@sidenavAnimationIsExpanded.done)="done()">
+      (@sidenavAnimationIsExpanded.done)="done()" style="width: 200px;">
       <mat-list-item (click)="isExpanded = !isExpanded" class="csgWhite">
         <mat-icon svgIcon="chevron_right" matListItemIcon *ngIf="!isExpanded" class="chevron-pad" aria-hidden="false"
           aria-label="Open Navigation"></mat-icon>
