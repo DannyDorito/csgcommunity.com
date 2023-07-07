@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-@Component( {
+@Component({
   selector: 'app-404',
   templateUrl: './404.component.html',
-  styleUrls: [ '../app.component.css' ]
-} )
-export class NotfoundComponent { }
+  styleUrls: ['../app.component.css'],
+})
+export class NotfoundComponent {}

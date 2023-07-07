@@ -16,21 +16,36 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { title: 'About Us' } },
   { path: 'servers', component: ServersComponent, data: { title: 'Servers' } },
   { path: 'rules', component: RulesComponent, data: { title: 'Rules' } },
-  { path: 'contact', component: ContactComponent, data: { title: 'Contact Us' } },
-  { path: 'projects/dayzrestart', component: DayZRestartScriptComponent, data: { title: 'DayZ Restart Script' } },
-  { path: 'projects/arma3restart', component: ARMA3RestartScriptComponent, data: { title: 'ARMA 3 Restart Script' } },
-  { path: '', pathMatch: 'full', component: HomeComponent, data: { title: 'Home' } },
-  { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } }
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: { title: 'Contact Us' },
+  },
+  {
+    path: 'projects/dayzrestart',
+    component: DayZRestartScriptComponent,
+    data: { title: 'DayZ Restart Script' },
+  },
+  {
+    path: 'projects/arma3restart',
+    component: ARMA3RestartScriptComponent,
+    data: { title: 'ARMA 3 Restart Script' },
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent,
+    data: { title: 'Home' },
+  },
+  { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } },
 ];
-@NgModule( {
+@NgModule({
   imports: [
-    RouterModule.forRoot( routes, {
+    RouterModule.forRoot(routes, {
       enableTracing: environment.tracing,
-      scrollPositionRestoration: 'enabled'
-    } )
+      scrollPositionRestoration: 'enabled',
+    }),
   ],
-  exports: [
-    RouterModule
-  ]
-} )
-export class AppRoutingModule { }
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

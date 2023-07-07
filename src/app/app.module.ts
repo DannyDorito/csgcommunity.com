@@ -41,7 +41,7 @@ import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restar
     RulesComponent,
     ContactComponent,
     DayZRestartScriptComponent,
-    ARMA3RestartScriptComponent
+    ARMA3RestartScriptComponent,
   ],
   imports: [
     HttpClientModule,
@@ -58,11 +58,13 @@ import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restar
     MatTableModule,
     MatBadgeModule,
     // service worker
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [
     // services
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
