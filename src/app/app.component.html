@@ -3,34 +3,34 @@
     <mat-nav-list [@sidenavAnimationIsExpanded]="isExpanded" (@sidenavAnimationIsExpanded.start)="start()"
       (@sidenavAnimationIsExpanded.done)="done()" style="width: 200px;">
       <mat-list-item (click)="isExpanded = !isExpanded" class="csgWhite">
-        <mat-icon svgIcon="chevron_right" matListItemIcon *ngIf="!isExpanded" class="chevron-pad" aria-hidden="false"
+        <mat-icon svgIcon="chevron_right" matListItemIcon *ngIf="!isExpanded" [ngClass]="!isExpanded ? 'chevron-pad sidenav' : 'chevron-pad'" aria-hidden="false"
           aria-label="Open Navigation"></mat-icon>
-        <mat-icon svgIcon="chevron_left" matListItemIcon *ngIf="isExpanded" class="chevron-pad" aria-hidden="false"
+        <mat-icon svgIcon="chevron_left" matListItemIcon *ngIf="isExpanded" [ngClass]="!isExpanded ? 'chevron-pad sidenav' : 'chevron-pad'" aria-hidden="false"
           aria-label="Close Navigation"></mat-icon>
         <p matLine *ngIf="isExpanded" class="csgOrange"><strong>CSG Exile</strong></p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }" class="csgWhite">
+      <mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="home" matListItemIcon aria-hidden="false" aria-label="Home"></mat-icon>
         <p matLine *ngIf="isExpanded">Home</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/servers']" routerLinkActive="router-link-active" class="csgWhite">
+      <mat-list-item [routerLink]="['/servers']" routerLinkActive="router-link-active" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="videogame_asset" matListItemIcon aria-hidden="false" aria-label="Servers"></mat-icon>
         <p matLine *ngIf="isExpanded">Servers</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/rules']" routerLinkActive="router-link-active" class="csgWhite">
+      <mat-list-item [routerLink]="['/rules']" routerLinkActive="router-link-active" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="speaker_notes" matListItemIcon matBadgeColor="warn" aria-hidden="false"
           aria-label="Rules"></mat-icon>
         <p matLine *ngIf="isExpanded">Rules</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" class="csgWhite">
+      <mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="people" matListItemIcon aria-hidden="false" aria-label="About Us"></mat-icon>
         <p matLine *ngIf="isExpanded">About Us</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/faq']" routerLinkActive="router-link-active" class="csgWhite">
+      <mat-list-item [routerLink]="['/faq']" routerLinkActive="router-link-active" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="help_outline" matListItemIcon aria-hidden="false" aria-label="FAQ"></mat-icon>
         <p matLine *ngIf="isExpanded">FAQ</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" class="csgWhite">
+      <mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" [ngClass]="!isExpanded ? 'csgWhite sidenav' : 'csgWhite'">
         <mat-icon svgIcon="alternate_email" matListItemIcon aria-hidden="false" aria-label="Contact Us"></mat-icon>
         <p matListItemTitle matLine *ngIf="isExpanded">Contact Us</p>
       </mat-list-item>
