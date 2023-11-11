@@ -59,11 +59,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "csgcommunity-ui:build:production"
+              "buildTarget": "csgcommunity-ui:build:production"
             },
             "development": {
-              "browserTarget": "csgcommunity-ui:build:development",
-              "ssl": true
+              "ssl": true,
+              "buildTarget": "csgcommunity-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "csgcommunity-ui:build"
+            "buildTarget": "csgcommunity-ui:build"
           }
         },
         "test": {
