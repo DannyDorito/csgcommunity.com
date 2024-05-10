@@ -16,14 +16,16 @@
           *ngIf="!isExpanded"
           [ngClass]="!isExpanded ? 'chevron-pad sidenav' : 'chevron-pad'"
           aria-hidden="false"
-          aria-label="Open Navigation"></mat-icon>
+          aria-label="Open Navigation"
+          style="width: 24px"></mat-icon>
         <mat-icon
           svgIcon="chevron_left"
           matListItemIcon
           *ngIf="isExpanded"
           [ngClass]="!isExpanded ? 'chevron-pad sidenav' : 'chevron-pad'"
           aria-hidden="false"
-          aria-label="Close Navigation"></mat-icon>
+          aria-label="Close Navigation"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded" class="csgOrange">
           <strong>CSG Exile</strong>
         </p>
@@ -37,7 +39,8 @@
           svgIcon="home"
           matListItemIcon
           aria-hidden="false"
-          aria-label="Home"></mat-icon>
+          aria-label="Home"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded">Home</p>
       </mat-list-item>
       <mat-list-item
@@ -48,7 +51,8 @@
           svgIcon="videogame_asset"
           matListItemIcon
           aria-hidden="false"
-          aria-label="Servers"></mat-icon>
+          aria-label="Servers"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded">Servers</p>
       </mat-list-item>
       <mat-list-item
@@ -60,7 +64,8 @@
           matListItemIcon
           matBadgeColor="warn"
           aria-hidden="false"
-          aria-label="Rules"></mat-icon>
+          aria-label="Rules"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded">Rules</p>
       </mat-list-item>
       <mat-list-item
@@ -71,7 +76,8 @@
           svgIcon="people"
           matListItemIcon
           aria-hidden="false"
-          aria-label="About Us"></mat-icon>
+          aria-label="About Us"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded">About Us</p>
       </mat-list-item>
       <mat-list-item
@@ -82,7 +88,8 @@
           svgIcon="help_outline"
           matListItemIcon
           aria-hidden="false"
-          aria-label="FAQ"></mat-icon>
+          aria-label="FAQ"
+          style="width: 24px"></mat-icon>
         <p matLine *ngIf="isExpanded">FAQ</p>
       </mat-list-item>
       <mat-list-item
@@ -93,7 +100,8 @@
           svgIcon="alternate_email"
           matListItemIcon
           aria-hidden="false"
-          aria-label="Contact Us"></mat-icon>
+          aria-label="Contact Us"
+          style="width: 24px"></mat-icon>
         <p matListItemTitle matLine *ngIf="isExpanded">Contact Us</p>
       </mat-list-item>
     </mat-nav-list>

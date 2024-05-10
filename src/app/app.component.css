@@ -60,11 +60,6 @@
   -ms-user-select: none;
 }
 
-.mat-mdc-list-item {
-  color: var(--csgWhite);
-  height: 30px;
-}
-
 .container {
   background-color: var(--csgGrey);
   margin: auto;

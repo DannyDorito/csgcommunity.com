@@ -33,6 +33,7 @@ import { MatIconRegistry } from '@angular/material/icon';
   ],
 })
 export class AppComponent implements OnInit {
+  
   isExpanded = false;
   animating = false;
   constructor(

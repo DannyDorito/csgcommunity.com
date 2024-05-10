@@ -11,7 +11,9 @@ import { NotfoundComponent } from './notfound/404.component';
 import { AboutComponent } from './about/about.component';
 import { ServersComponent } from './servers/servers.component';
 import { RulesComponent } from './rules/rules.component';
-// services
+import { ContactComponent } from './contact/contact.component';
+import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
+import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
 
 // material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,13 +24,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
+import { NgOptimizedImage } from '@angular/common';
+import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
 
-// service worker
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
-import { ContactComponent } from './contact/contact.component';
-import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
-import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
+const globalRippleConfig: RippleGlobalOptions = {
+  disabled: true,
+};
 
 @NgModule({
   declarations: [
@@ -57,13 +58,10 @@ import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restar
     MatSnackBarModule,
     MatTableModule,
     MatBadgeModule,
-    // service worker
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-    }),
+    NgOptimizedImage
   ],
   providers: [
-    // services
+    {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig}
   ],
   bootstrap: [AppComponent],
 })
