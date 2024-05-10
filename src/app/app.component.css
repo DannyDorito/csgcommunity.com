@@ -53,13 +53,6 @@
   background-color: var(--csgBlack);
 }
 
-.unselectable {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
 .container {
   background-color: var(--csgGrey);
   margin: auto;
