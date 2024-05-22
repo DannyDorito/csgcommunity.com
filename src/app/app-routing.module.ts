@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { environment } from '../environments/environment';
 
 const routes: Routes = [
   {
@@ -34,6 +33,7 @@ const routes: Routes = [
     loadChildren: () => import( './home/home.module' ).then( m => m.HomeModule),
     data: { title: 'Home' }
   },
+  { path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
   {
     path: '**',
     data: { title: 'Not Found' },
@@ -44,7 +44,6 @@ const routes: Routes = [
 @NgModule( {
   imports: [
     RouterModule.forRoot( routes, {
-      enableTracing: environment.tracing,
       scrollPositionRestoration: 'enabled',
     } ),
   ],

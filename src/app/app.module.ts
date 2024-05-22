@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // material
@@ -15,13 +14,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
 import { NgOptimizedImage } from '@angular/common';
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
+import { AppRoutingModule } from './app-routing.module';
 
 const globalRippleConfig: RippleGlobalOptions = {
   disabled: true,
 };
 
 @NgModule( {
-  declarations: [],
+  declarations: [AppComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
