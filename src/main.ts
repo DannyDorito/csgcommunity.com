@@ -1,4 +1,4 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { enableProdMode, importProvidersFrom, isDevMode } from '@angular/core';
 
 import { environment } from './environments/environment';
 import { AppComponent } from './app/app.component';
@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app/app-routing.module';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
+import { provideServiceWorker } from '@angular/service-worker';
 
 const globalRippleConfig: RippleGlobalOptions = {
   disabled: true,
@@ -27,12 +28,16 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
     providers: [
-        importProvidersFrom(BrowserModule,
-        // routing
-        AppRoutingModule, MatIconModule, MatButtonModule, MatSidenavModule, MatListModule, MatSnackBarModule, MatTableModule, MatBadgeModule),
-        { provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig },
-        provideHttpClient(withInterceptorsFromDi()),
-        provideAnimations(),
-    ]
+    importProvidersFrom(BrowserModule, 
+    // routing
+    AppRoutingModule, MatIconModule, MatButtonModule, MatSidenavModule, MatListModule, MatSnackBarModule, MatTableModule, MatBadgeModule),
+    { provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig },
+    provideHttpClient(withInterceptorsFromDi()),
+    provideAnimations(),
+    provideServiceWorker('ngsw-worker.js', {
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerWhenStable:30000'
+    })
+]
 })
   .catch(err => console.log(err));
