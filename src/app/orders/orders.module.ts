@@ -6,12 +6,10 @@ import { OrdersComponent } from './orders.component';
 
 
 @NgModule({
-  declarations: [
-    OrdersComponent
-  ],
-  imports: [
-    CommonModule,
-    OrdersRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        OrdersRoutingModule,
+        OrdersComponent
+    ]
 })
 export class OrdersModule { }

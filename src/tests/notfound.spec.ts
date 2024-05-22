@@ -9,8 +9,8 @@ describe( 'NotfoundComponent', () =>
   beforeEach( async () =>
   {
     await TestBed.configureTestingModule( {
-      declarations: [ NotfoundComponent ]
-    } )
+    imports: [NotfoundComponent]
+} )
       .compileComponents();
 
     fixture = TestBed.createComponent( NotfoundComponent );

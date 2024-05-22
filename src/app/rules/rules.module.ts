@@ -4,10 +4,10 @@ import { RulesComponent } from "./rules.component";
 import { RulesRoutingModule } from "./rules-routing.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RulesRoutingModule
-  ],
-  declarations: [RulesComponent]
+    imports: [
+        CommonModule,
+        RulesRoutingModule,
+        RulesComponent
+    ]
 })
 export class RulesModule { }

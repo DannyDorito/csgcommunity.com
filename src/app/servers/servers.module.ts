@@ -5,11 +5,11 @@ import { ServersRoutingModule } from "./servers-routing.module";
 import { MatListModule } from "@angular/material/list";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ServersRoutingModule,
-    MatListModule,
-  ],
-  declarations: [ServersComponent]
+    imports: [
+        CommonModule,
+        ServersRoutingModule,
+        MatListModule,
+        ServersComponent,
+    ]
 })
 export class ServersModule { }

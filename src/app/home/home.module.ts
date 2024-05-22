@@ -5,11 +5,11 @@ import { HomeComponent } from "./home.component";
 import { NgOptimizedImage } from '@angular/common'
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HomeRoutingModule,
-    NgOptimizedImage
-  ],
-  declarations: [HomeComponent]
+    imports: [
+        CommonModule,
+        HomeRoutingModule,
+        NgOptimizedImage,
+        HomeComponent
+    ]
 })
 export class HomeModule { }

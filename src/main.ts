@@ -1,12 +1,38 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { enableProdMode, importProvidersFrom } from '@angular/core';
+
 import { environment } from './environments/environment';
+import { AppComponent } from './app/app.component';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatTableModule } from '@angular/material/table';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app/app-routing.module';
+import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
+import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
+
+const globalRippleConfig: RippleGlobalOptions = {
+  disabled: true,
+};
+
+
 
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
+bootstrapApplication(AppComponent, {
+    providers: [
+        importProvidersFrom(BrowserModule,
+        // routing
+        AppRoutingModule, MatIconModule, MatButtonModule, MatSidenavModule, MatListModule, MatSnackBarModule, MatTableModule, MatBadgeModule),
+        { provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig },
+        provideHttpClient(withInterceptorsFromDi()),
+        provideAnimations(),
+    ]
+})
   .catch(err => console.log(err));

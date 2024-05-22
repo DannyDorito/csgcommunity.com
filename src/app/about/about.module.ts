@@ -5,11 +5,11 @@ import { AboutComponent } from "./about.component";
 import { MatListModule } from '@angular/material/list';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    AboutRoutingModule,
-    MatListModule
-  ],
-  declarations: [AboutComponent]
+    imports: [
+        CommonModule,
+        AboutRoutingModule,
+        MatListModule,
+        AboutComponent
+    ]
 })
 export class AboutModule { }

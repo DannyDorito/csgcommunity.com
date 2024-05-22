@@ -7,8 +7,8 @@ describe('ARMA3RestartScriptComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ARMA3RestartScriptComponent ]
-    })
+    imports: [ARMA3RestartScriptComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ARMA3RestartScriptComponent);

@@ -7,8 +7,8 @@ describe('DayZRestartScriptComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DayZRestartScriptComponent ]
-    })
+    imports: [DayZRestartScriptComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(DayZRestartScriptComponent);

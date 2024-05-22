@@ -4,10 +4,10 @@ import { FaqRoutingModule } from "./faq-routing.module";
 import { FaqComponent } from "./faq.component";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FaqRoutingModule
-  ],
-  declarations: [FaqComponent]
+    imports: [
+        CommonModule,
+        FaqRoutingModule,
+        FaqComponent
+    ]
 })
 export class FaqModule { }
