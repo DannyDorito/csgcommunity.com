@@ -13,3 +13,7 @@ body {
   --csgFont: "Open Sans";
   text-shadow: 2px 2px 2px var(--csgBlack)
 }
+
+a {
+  background-color: var(--csgOrange);
+}

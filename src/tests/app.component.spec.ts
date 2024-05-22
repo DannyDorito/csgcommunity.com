@@ -11,9 +11,9 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppComponent ],
-      providers: [ MatSnackBar, MatIconRegistry, DomSanitizer ]
-    })
+    imports: [AppComponent],
+    providers: [MatSnackBar, MatIconRegistry, DomSanitizer]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);

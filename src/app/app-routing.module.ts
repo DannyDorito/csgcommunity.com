@@ -1,51 +1,52 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FaqComponent } from './faq/faq.component';
-import { HomeComponent } from './home/home.component';
-import { NotfoundComponent } from './notfound/404.component';
-import { AboutComponent } from './about/about.component';
-import { ServersComponent } from './servers/servers.component';
-import { RulesComponent } from './rules/rules.component';
-import { ContactComponent } from './contact/contact.component';
-import { DayZRestartScriptComponent } from './day-zrestart-script/day-zrestart-script.component';
-import { ARMA3RestartScriptComponent } from './arma3-restart-script/arma3-restart-script.component';
-import { environment } from '../environments/environment';
 
 const routes: Routes = [
-  { path: 'faq', component: FaqComponent, data: { title: 'FAQ' } },
-  { path: 'about', component: AboutComponent, data: { title: 'About Us' } },
-  { path: 'servers', component: ServersComponent, data: { title: 'Servers' } },
-  { path: 'rules', component: RulesComponent, data: { title: 'Rules' } },
+  {
+    path: 'faq',
+    loadChildren: () => import( './faq/faq.module' ).then( m => m.FaqModule),
+    data: { title: 'FAQ' }
+  },
+  {
+    path: 'about',
+    loadChildren: () => import( './about/about.module' ).then( m => m.AboutModule),
+    data: { title: 'About Us' }
+  },
+  {
+    path: 'servers',
+    loadChildren: () => import( './servers/servers.module' ).then( m => m.ServersModule),
+    data: { title: 'Servers' }
+  },
+  {
+    path: 'rules',
+    loadChildren: () => import( './rules/rules.module' ).then( m => m.RulesModule),
+    data: { title: 'Rules' }
+  },
   {
     path: 'contact',
-    component: ContactComponent,
+    loadChildren: () => import( './contact/contact.module' ).then( m => m.ContactModule),
     data: { title: 'Contact Us' },
-  },
-  {
-    path: 'projects/dayzrestart',
-    component: DayZRestartScriptComponent,
-    data: { title: 'DayZ Restart Script' },
-  },
-  {
-    path: 'projects/arma3restart',
-    component: ARMA3RestartScriptComponent,
-    data: { title: 'ARMA 3 Restart Script' },
   },
   {
     path: '',
     pathMatch: 'full',
-    component: HomeComponent,
-    data: { title: 'Home' },
+    loadChildren: () => import( './home/home.module' ).then( m => m.HomeModule),
+    data: { title: 'Home' }
   },
-  { path: '**', component: NotfoundComponent, data: { title: 'Not Found' } },
+  { path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
+  {
+    path: '**',
+    data: { title: 'Not Found' },
+    loadChildren: () => import( './notfound/notfound.module' ).then( m => m.NotFoundModule),
+  },
 ];
-@NgModule({
+
+@NgModule( {
   imports: [
-    RouterModule.forRoot(routes, {
-      enableTracing: environment.tracing,
+    RouterModule.forRoot( routes, {
       scrollPositionRestoration: 'enabled',
-    }),
+    } ),
   ],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
+  exports: [ RouterModule ],
+} )
+export class AppRoutingModule { }

@@ -8,32 +8,46 @@ import {
 } from '@angular/animations';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconRegistry } from '@angular/material/icon';
+import { MatIconRegistry, MatIcon } from '@angular/material/icon';
+import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
+import { NgIf, NgClass } from '@angular/common';
+import { MatNavList, MatListItem, MatListItemIcon, MatListItemTitle } from '@angular/material/list';
+import { MatSidenavContainer, MatSidenav, MatSidenavContent } from '@angular/material/sidenav';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  animations: [
-    trigger('sidenavAnimationIsExpanded', [
-      state(
-        'true',
-        style({
-          width: '200px',
-        })
-      ),
-      state(
-        'false',
-        style({
-          width: '64px',
-        })
-      ),
-      transition('false <=> true', animate('100ms ease')),
-    ]),
-  ],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css', '../styles.css'],
+    animations: [
+        trigger('sidenavAnimationIsExpanded', [
+            state('true', style({
+                width: '200px',
+            })),
+            state('false', style({
+                width: '64px',
+            })),
+            transition('false <=> true', animate('100ms ease')),
+        ]),
+    ],
+    standalone: true,
+    imports: [
+        MatSidenavContainer,
+        MatSidenav,
+        MatNavList,
+        MatListItem,
+        NgIf,
+        MatIcon,
+        MatListItemIcon,
+        NgClass,
+        RouterLinkActive,
+        RouterLink,
+        MatListItemTitle,
+        MatSidenavContent,
+        RouterOutlet,
+    ],
 })
 export class AppComponent implements OnInit {
-  
+
   isExpanded = false;
   animating = false;
   constructor(
