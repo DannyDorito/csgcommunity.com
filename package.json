@@ -24,21 +24,21 @@
     "@angular/service-worker": "^17.3.9",
     "core-js": "^3.37.1",
     "rxjs": "^7.8.1",
-    "tslib": "^2.6.2",
-    "zone.js": "^0.14.6"
+    "tslib": "^2.6.3",
+    "zone.js": "^0.14.7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.3.8",
-    "@angular-eslint/builder": "17.5.1",
-    "@angular-eslint/eslint-plugin": "17.5.1",
-    "@angular-eslint/eslint-plugin-template": "17.5.1",
-    "@angular-eslint/schematics": "17.5.1",
-    "@angular-eslint/template-parser": "17.5.1",
+    "@angular-eslint/builder": "18.0.1",
+    "@angular-eslint/eslint-plugin": "18.0.1",
+    "@angular-eslint/eslint-plugin-template": "18.0.1",
+    "@angular-eslint/schematics": "18.0.1",
+    "@angular-eslint/template-parser": "18.0.1",
     "@angular/cli": "~17.3.8",
     "@angular/compiler-cli": "^17.3.9",
     "@types/jasmine": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "eslint": "^8.57.0",
     "jasmine-core": "^5.1.2",
     "karma": "^6.4.3",
@@ -46,7 +46,7 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "typescript": "^5.4.5"
   }
 }
